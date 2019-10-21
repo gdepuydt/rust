@@ -3,3 +3,9 @@
 members = [
     "no_std",
 ]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
