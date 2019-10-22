@@ -1,11 +1,14 @@
 [workspace]
 
 members = [
+    "free_running",
     "no_std",
 ]
 
-[profile.dev]
-panic = "abort"
 
-[profile.release]
-panic = "abort"
+#only for the free_running crate
+#[profile.dev]
+#panic = "abort"
+#
+#[profile.release]
+#panic = "abort"
