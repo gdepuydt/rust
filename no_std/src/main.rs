@@ -8,9 +8,15 @@ use core::panic::PanicInfo;
 // Pull in the system libc library for what crt0.o likely requires.
 extern crate libc;
 
+#[cfg(target_os = "windows")]
+#[no_mangle]
+pub extern "C" fn mainCRTStartup(argc: i32, argv: *const *const u8) -> i32 {
+    main(argc, argv)
+}
+
 // Entry point for this program.
 #[no_mangle] // ensure that this symbol is called `main` in the output
-pub extern fn main(_argc: i32, _argv: *const *const u8) -> i32 {
+pub extern fn main(argc: i32, _argv: *const *const u8) -> i32 {
     0
 }
 
