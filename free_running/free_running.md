@@ -4,7 +4,7 @@ This crate compiles without linking to the Rust Standard Libary.
 
 There are mainly 2 ways to go about this:
 
-1) Creating a Freerunning app, ie. without a minimal C runtime and no Rust stdlib [[1]].
+1) Creating a Freerunning app, ie. without a minimal C runtime and no Rust stdlib [[1]]. there's also this [post](https://users.rust-lang.org/t/win32-no-std-no-main-no-libc/30038), which refers to this [repository](https://github.com/blaubart69/rust_win32_no_std_no_main/tree/b728a18beb9edf3f9aecc6740cc6924196095746). Can you make it work? without the winapi? its possible. but don't forget to enable the profiles for aborting on panic.
 
 2) Creating an app without using the Rust stdlib, but that has a minimal C runtime setup [[2]].  
 
