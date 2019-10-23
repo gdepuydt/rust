@@ -15,6 +15,12 @@ Note that RLS in VSCode will indicate errors, but these can be ignored. Compilat
 
 > In many cases, you may need to manually link to the compiler_builtins crate when building a no_std binary. You may observe this via linker error messages such as "undefined reference to `__rust_probestack'". Using this crate also requires enabling the library feature compiler_builtins_lib. You can read more about this [here](https://doc.rust-lang.org/1.30.0/unstable-book/library-features/compiler-builtins-lib.html).
 
+On my Linux machine option 2 seems to work just fine. On my windows machine, not so much: to be checked.
+
+I guess one of the first things we should try and do is to get some text output... for example by implementing the println!() macro...
+
+
+
 [1]: https://os.phil-opp.com/freestanding-rust-binary/#introduction
 
 [2]: https://doc.rust-lang.org/1.30.0/unstable-book/language-features/lang-items.html#using-libc

@@ -1,9 +1,13 @@
 #![feature(lang_items, core_intrinsics)]
-#![feature(start)]
+#![feature(compiler_builtins_lib)]
+//#![feature(start)]
 #![no_std]
 #![no_main]
+
+extern crate compiler_builtins;
 use core::intrinsics;
 use core::panic::PanicInfo;
+
 
 // Pull in the system libc library for what crt0.o likely requires.
 extern crate libc;
