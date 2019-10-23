@@ -4,7 +4,8 @@
 #![no_std]
 #![no_main]
 
-extern crate compiler_builtins;
+#[allow(unused_imports)] 
+use compiler_builtins;
 use core::intrinsics;
 use core::panic::PanicInfo;
 
