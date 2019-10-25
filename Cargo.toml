@@ -4,6 +4,7 @@ members = [
     "free_running",
     "no_std",
     "print_os",
+    "window",
 ]
 
 
