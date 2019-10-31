@@ -5,6 +5,7 @@ members = [
     "no_std",
     "print_os",
     "window",
+    "gtk-window",
 ]
 
 
