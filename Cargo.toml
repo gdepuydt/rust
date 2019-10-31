@@ -6,6 +6,7 @@ members = [
     "print_os",
     "window",
     "gtk-window",
+    "snappy",
 ]
 
 
